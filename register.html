@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng ký sử dụng SME.NET</title>
+    <link rel="icon" href="./static/Contents/Icons/misa-sme-icon-min.png">
+    <link href="./static/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="./static/CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/animation.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/glyphicon.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="./static/CSS/Views/register.css" rel="stylesheet" />
+    <link href="./static/CSS/common/control.css" rel="stylesheet" />
+    <link href="./static/CSS/common/common.css" rel="stylesheet" />
+    <link href="./static/CSS/common/main.css" rel="stylesheet" />
+</head>
+    <body>
+        <div class="loading-page"></div>
+        <div id="wraper">
+            <div id="header">
+                <div style="width: 250px">
+                    <a href="/">
+                        <div class="page-content logo" style="width: 250px">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="register-content">
+                <div class="container body-content">
+                    <div class="page-content">
+                        <div class="container-reg">
+                            <div class="content-left">
+                                <img src="./static/Contents/Images/Banner/Banner2.jpg" alt="register" />
+                                <div id="text">
+                                    <h4>PHẦN MỀM<br>KẾ TOÁN DOANH NGHIỆP</h4>
+                                    <ul>
+                                        <li>Đáp ứng đầy đủ nghiệp vụ quản trị tài chính - kế toán theo đúng thông tư 133/2016/TT-BTC và 200/2014/TT-BTC</li>
+                                        <li>Quản trị tình hình tài chính kế toán mọi lúc, mọi nơi qua mobile</li>
+                                        <li>Tích hợp trực tiếp phần mềm hóa đơn điện tử, ngân hàng điện tử, kết nối thẳng với Tổng cục Thuế giúp tiết kiệm nhiều thời gian, chi phí kê khai thuế, sử dụng hóa đơn, giao dịch ngân hàng.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="formRegister" class="content-right">
+                                
+                                    <div class="field-text-head">
+                                        Đăng ký sử dụng SME.NET 2019
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div style="color: #FF0000;">
+                                                <div class="clear"></div>
+                                                <div id="boxValidationSummary" class="sumary-validate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Điện thoại di động-->
+                                    <div class="field-text" style="padding-bottom: 0;">Điện thoại di động</div>
+                                    <div class="field-text-italic">(Vui lòng nhập số điện thoại di động để đăng ký SME.NET)</div>
+
+
+                                    <div id="register-error"  class="not-show red-color"></div>
+                                    <div id="register-error-phone"  class="not-show red-color"></div>
+                                    <div id="register-error-email" class="not-show red-color"></div>
+                                    <div id="register-error-pw"  class="not-show red-color"></div>
+                                    <div id="register-error-repw"  class="not-show red-color"></div>
+
+                                    
+                                    <div class="row">
+                                        <div class="col-md-3 no-padding-right r-contact-prefix">
+                                            <div class="code-vn-cls box-country-select">Việt Nam </div>
+                                        </div>
+                                        <div class="col-md-9 no-padding-left r-contact-name">
+                                            <span class="riSingle RadInput RadInput_Office2010Silver wrap-control" style="width:100%;">
+                                                <input id="txtContactMobile" name="ContactMobile" size="20" maxlength="100" class="riTextBox riEnabled text-field-custom-cls text-required check-phone" tabindex="15" type="search" value="">
+                                               
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <!--Email-->
+                                    <div class="row" style="margin-top:4px;">
+                                        <div class="col-md-12">
+                                            <div class="field-text">Email</div>
+                                            <span style="width:100%;">
+                                                <input id="txtContactEmail" name="ContactEmail" size="20" maxlength="100" class="riTextBox riEnabled text-field-custom-cls text-required check-email" tabindex="20" type="search" value="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <!--Mật khẩu-->
+                                    <div class="row" style="margin-top:4px;">
+                                        <div class="col-md-12">
+                                            <div class="field-text">Mật khẩu</div>
+                                            <span style="width:100%;">
+                                                <input id="txtPassword" name="Password" size="20" maxlength="100" class="riTextBox riEnabled text-field-custom-cls check-password" tabindex="20" type="password" value="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <!--Xác nhận mật khẩu-->
+                                    <div class="row" style="margin-top:4px;">
+                                        <div class="col-md-12">
+                                            <div class="field-text">Xác nhận mật khẩu</div>
+                                            <span style="width:100%;">
+                                                <input id="txtRePassword" name="RePassword" size="20" maxlength="100" class="riTextBox riEnabled text-field-custom-cls check-re-password" tabindex="20" type="password" value="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <!--Mã xác nhận-->
+                                    <!-- <div class="row" style="margin-top:4px;">
+                                        <div class="col-md-12">
+                                            <div class="field-text" id="lblCaptcha">Mã xác nhận</div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="row">
+                                        <div class="col-sm-4 divCaptcha">
+
+                                            <img id="cpCaptcha" class="img-responsive imgCaptcha" src="data:image/jpeg;charset=utf-8;base64,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">
+                                            <input type="image" name="btnRefresh" id="btnRefresh" class="img-responsive refreshCaptcha" src="./static/Contents/Icons/refreshBlue.png" onclick="return txtCaptcha_Clicked();">
+
+                                        </div>
+                                        <div class="col-sm-8 captcha">
+                                            <span id="txtCaptcha-wrap" class="riSingle RadInput RadInput_Office2010Silver" style="width:100%;">
+                                                <input id="txtCaptcha" name="txtCaptcha" size="20" maxlength="100" class="riTextBox riEmpty text-field-custom-cls" tabindex="31" placeholder="Nhập mã xác nhận" type="search">
+                                            </span>
+                                        </div>
+                                        <div style="clear: both"></div>
+                                        <div class="validation right margin_left validation-position" style="margin-top: -15px;">
+                                            <span id="RequiredFieldValidator1" title="Mã xác nhận không được để trống" style="display:none;">*</span>
+                                        </div>
+                                    </div> -->
+                                    <div class="row" style="padding-top:30px">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6 no-padding-left no-padding-right">
+                                            <div class="register-button-wrapper" id="register-button-wrapper-firstPage">
+                                                <span id="btnRegister" tabindex="50" class="RadButton RadButton_Office2010Silver rbSkinnedButton button-register inactive-button">
+                                                    <input style="border:0px;" class="rbDecorated" type="button" name="ctl00$ContentPlaceHolder1$btnRegister_input" id="ctl00_btnRegister_input" value="Đăng Ký" tabindex="-1">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-contact-content">
+
+
+                <div class="footer-wrapper">
+                    <div class="misa-branch">
+                        <div class="branch-name">
+                            MISA HÀ NỘI
+                        </div>
+                        <div class="branch-info">
+                            <ul>
+
+                                <li class="branch-tel">Tel: <b>024 3762 7891</b></li>
+                                <li class="branch-email">Email: <a href="mailto:shsales@han.misa.com.vn">shsales@han.misa.com.vn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="misa-branch">
+                        <div class="branch-name">
+                            MISA TP HỒ CHÍ MINH
+                        </div>
+                        <div class="branch-info">
+                            <ul>
+
+                                <li class="branch-tel">Tel: <b>028 5431 8318</b></li>
+                                <li class="branch-email">Email: <a href="mailto:shsales@hcm.misa.com.vn">shsales@hcm.misa.com.vn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="misa-branch">
+                        <div class="branch-name">
+                            MISA ĐÀ NẴNG
+                        </div>
+                        <div class="branch-info">
+                            <ul>
+
+                                <li class="branch-tel">Tel: <b>0236 366 7555</b></li>
+                                <li class="branch-email">Email: <a href="mailto:shsales@dng.misa.com.vn">shsales@dng.misa.com.vn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="misa-branch">
+                        <div class="branch-name">
+                            MISA BUÔN MA THUỘT
+                        </div>
+                        <div class="branch-info">
+                            <ul>
+
+                                <li class="branch-tel">Tel: <b>0262 381 7400</b></li>
+                                <li class="branch-email">Email: <a href="mailto:shsales@bmt.misa.com.vn">shsales@bmt.misa.com.vn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="misa-branch">
+                        <div class="branch-name">
+                            MISA CẦN THƠ
+                        </div>
+                        <div class="branch-info">
+                            <ul>
+
+                                <li class="branch-tel">Tel: <b>0292 376 6468</b></li>
+                                <li class="branch-email">Email: <a href="mailto:shsales@cth.misa.com.vn">shsales@cth.misa.com.vn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="contact-item">
+                    <div class="container" style="text-align: center">
+                        <div class="row">
+                            <div class="col-md-12 no-padding-left no-padding-right">
+                                <p class="copyright"><span id="pcopyright">Copyright © 2017 - 2018 MISA JSC</span><a class="a-footer" target="_blank" href="http://www.misa.com.vn">www.misa.com.vn</a></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./static/Scripts/lib/jquery-3.2.1.min.js"></script>
+        <script src="./static/Scripts/lib/bootstrap.min.js"></script>
+        <script src="./static/Scripts/lib/popper.min.js"></script>
+        <script src="./static/Scripts/Views/config.js"></script>
+        <script src="./static/Scripts/common/common.js"></script>
+        <script src="./static/Scripts/Views/register.js"></script>
+        <script src="./static/Scripts/common/validation.js"></script>
+    
+    </body>
+</html>

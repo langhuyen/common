@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập SME.NET</title>
+    <link rel="icon" href="./static/Contents/Icons/misa-sme-icon-min.png">
+    <link href="./static/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="./static/CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/animation.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/glyphicon.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="./static/CSS/Views/login.css" rel="stylesheet" />
+    <link href="./static/CSS/common/control.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./static/CSS/common/main.css">
+    <link rel="stylesheet" href="./static/CSS/common/common.css">
+</head>
+<body style="height:100% !important;">
+    <div class="loading-page"></div>
+    <div id="wraper">
+        <div id="header">
+            <div style="width: 250px">
+                <a href="/">
+                    <div class="page-content logo" style="width: 250px">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="register-content">
+            <!-- <div class="black-layer"></div> -->
+            <div class="container main-section">
+                <div class="row inner-section">
+                    <div class="col-md-6 d-none d-lg-block" style="padding: 0">
+                        <div class="product-images">
+                            <img src="./static/Contents/Images/tong-quan-left.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-sm-12" style="padding: 0">
+                        <div class="login-form text-center">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="logo-title">
+                                        <img src="./static/Contents/Icons/misa-sme-icon-min.png" alt="" class="mx-auto d-block logo-img">
+                                        <img src="./static/Contents/Images/Logo.png" alt="">
+                                    </div>
+                                    <div class="login-title">
+                                        <h4>Đăng nhập phần mềm SME.NET</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="username-area"> 
+                                        <input type="text" id="txtUserName" name="ContactEmail" required autocomplete="off">
+                                        <div class="label">Tên đăng nhập</div>
+                                        <div class="username-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="password-area">
+                                        <input type="password" id="txtPassword" name="Password" required autocomplete="off">
+                                        <div class="label">Mật khẩu</div>
+                                        <div class="login-error"></div>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <div class="button-register">
+                                        <div class="btn btn-primary" id="btnLogin">
+                                            Đăng nhập
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="register-direct">
+                                        <span>Bạn chưa có tài khoản?</span>
+                                        <a href="/register.html">Đăng ký</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+        <div class="footer-contact-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer-wrapper">
+                        <div class="misa-branch">
+                            <div class="branch-name">
+                                MISA HÀ NỘI
+                            </div>
+                            <div class="branch-info">
+                                <ul>
+                                    <li class="branch-tel">Tel: <b>024 3762 7891</b></li>
+                                    <li class="branch-email">Email: <a href="mailto:shsales@han.misa.com.vn">shsales@han.misa.com.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="misa-branch">
+                            <div class="branch-name">
+                                MISA TP HỒ CHÍ MINH
+                            </div>
+                            <div class="branch-info">
+                                <ul>
+                                    <li class="branch-tel">Tel: <b>028 5431 8318</b></li>
+                                    <li class="branch-email">Email: <a href="mailto:shsales@hcm.misa.com.vn">shsales@hcm.misa.com.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="misa-branch">
+                            <div class="branch-name">
+                                MISA ĐÀ NẴNG
+                            </div>
+                            <div class="branch-info">
+                                <ul>
+                                    <li class="branch-tel">Tel: <b>0236 366 7555</b></li>
+                                    <li class="branch-email">Email: <a href="mailto:shsales@dng.misa.com.vn">shsales@dng.misa.com.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="misa-branch">
+                            <div class="branch-name">
+                                MISA BUÔN MA THUỘT
+                            </div>
+                            <div class="branch-info">
+                                <ul>
+                                    <li class="branch-tel">Tel: <b>0262 381 7400</b></li>
+                                    <li class="branch-email">Email: <a href="mailto:shsales@bmt.misa.com.vn">shsales@bmt.misa.com.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="misa-branch">
+                            <div class="branch-name">
+                                MISA CẦN THƠ
+                            </div>
+                            <div class="branch-info">
+                                <ul>
+                                    <li class="branch-tel">Tel: <b>0292 376 6468</b></li>
+                                    <li class="branch-email">Email: <a href="mailto:shsales@cth.misa.com.vn">shsales@cth.misa.com.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="contact-item">
+                            <div class="row">
+                                <div class="col-md-12 no-padding-left no-padding-right">
+                                    <p class="copyright  text-center">
+                                        <span id="pcopyright">Copyright © 2017 - 2018 MISA JSC</span>
+                                        <a class="a-footer" target="_blank" href="http://www.misa.com.vn">www.misa.com.vn</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/Scripts/lib/jquery-3.2.1.min.js"></script>
+    <script src="./static/Scripts/lib/bootstrap.min.js"></script>
+    <script src="./static/Scripts/lib/popper.min.js"></script>
+    <script src="./static/Scripts/common/validation.js"></script>
+    <script src="./static/Scripts/common/common.js"></script>
+    <script src="./static/Scripts/Views/login.js"></script>
+    <script src="./static/Scripts/Views/config.js"></script>
+</body>
+</html>

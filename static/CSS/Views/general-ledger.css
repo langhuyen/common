@@ -1,0 +1,26 @@
+.frmCustomerList {
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.toolbar .toolbar-body {
+    height: 28px;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+#filterElement th {
+    position: sticky;
+    top: 55px;
+}
+
+th[fieldData="DebitAmount"], th[fieldData="CreditAmount"] {
+    top: 28px;
+    position: sticky;
+}

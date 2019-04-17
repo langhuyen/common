@@ -1,0 +1,143 @@
+#tblReportHeader {
+    width: 100%;
+}
+
+
+.gridPanel-header-item-title {
+    height: auto;
+    -webkit-flex: 1;
+    min-height: 28px;
+    padding: 5px 10px 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gridPanel-header-item-filter {
+    table-layout: fixed;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 2px;
+    width: 100%;
+    height: 28px;
+}
+
+.width-100 {
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.width-150 {
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.width-200 {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.width-300 {
+    min-width: 300px;
+}
+#tblReportHeader th{
+    background-color: #ededed;
+    font-weight: normal;
+}
+#tblReportHeader td{
+    white-space: nowrap;
+    padding: 0 10px;
+}
+    table.bordered th:last-child, table.bordered td:last-child {
+        border-right: none;
+    }
+.main-content {
+    /* padding: 10px 0px; */
+    /* position: absolute;
+    left: 10px;
+    right: 10px; */
+    /* font-family: sans-serif; */
+}
+    .report-section , .header-report-section {
+        /* font-family: Lato; */
+    }
+        .report-section .header-report-section .report-name {
+            color: #444;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-top: 8px;
+        }
+        .report-section .header-report-section #yearReport {
+            border: none;
+            border-bottom: 1px solid #444;
+            font-size: 20px;
+        }
+    .main-content .top-section-report {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #444;
+    }
+        .main-content .top-section-report .company-info .company-name{
+            font-weight: bold;
+            font-size: 14px;
+        }
+    .main-content .content-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 60px 0 10px 0;
+        color: #444; 
+    }
+    .main-content .description-title{
+        font-style: italic;
+        font-size: 14px;
+        color: #444;
+        padding: 10px 0px;
+    }
+    .main-content .report-table {
+        /* position: absolute;
+        right: 0;
+        left: 0; */
+        /* border: none; */
+        border: 1px solid #ccc;
+        border-top: none;
+        
+    }
+        th[fieldData="JournalMemo"], td[fieldData="JournalMemo"] {
+            width: calc(100% -  1350px);
+        }   
+        .main-content .report-table .has-scroll {
+            max-height: 450px;
+            overflow-y: overlay;
+        }
+            #tbodyReport tr td.tbodyReport-content {
+                padding: 0 ;
+                border: none;
+            }
+            .main-content .report-table .has-scroll #tbl-detail-report{
+                width: 100%;
+            }
+    .report-page {
+        margin-top: 10px;
+    }
+    .main-content .report-label {
+        font-weight: 600;
+    }
+    .main-content .note, .description-title {
+        font-style: italic;
+        font-family: sans-serif;
+    }
+    #printBtn {
+        margin-top: 10px;
+    }
+    #printBtn .btn {
+        font-size: 17px;
+    }
+    #printBtn .btn-primary {
+        background-color: #2baaed;
+        color: #fff;
+        border: none;
+    }

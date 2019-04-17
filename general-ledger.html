@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./static/Contents/Icons/misa-sme-icon-min.png">
+    <link href="./static/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="./static/CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="./static/CSS/common/jquery-ui-custom.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/animation.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/glyphicon.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="./static/CSS/common/main.css" rel="stylesheet" />
+    <link href="./static/CSS/common/control.css" rel="stylesheet" />
+    <link href="./static/CSS/common/common.css" rel="stylesheet" />
+    <link href="./static/CSS/common/combobox.css" rel="stylesheet" />
+    <link href="./static/CSS/Views/header.css" rel="stylesheet" />
+    <link href="./static/CSS/common/panelSubMenu.css" rel="stylesheet"/>
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/all.min.css" rel="stylesheet">
+    <link href="./static/CSS/Views/rae.css" rel="stylesheet" />
+    <link href="./static/CSS/Views/general-ledger.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Báo cáo</title>
+</head>
+<body>
+            <div id="header">
+                <div style="width: 200px">
+                    <a href="/">
+                        <div class="page-content logo" style="width: 200px">
+                        </div>
+                    </a>
+                </div>
+                <div class="header-user-info">
+                    <div class="user-info-box">
+                        <span class="avatar-user"></span>
+                        <span class="user-info">
+                        </span>
+                    </div>
+                    <div class="user-menu-box hide-if-outside">
+                        <div id="btnChangePassword" command="ChangePassword" class="user-menu-item">Thay đổi mật khẩu</div>
+                        <div id="btnLogout" command="Logout" class="user-menu-item">Đăng xuất</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-nav">
+                <ul class="menu-parent">
+                    <li class="nav-item">
+                        <a href="./home.html">
+                            <div class="icon-nav">
+                                <i class="material-icons">dashboard</i>
+                            </div>
+                            <div class="label-item">Bàn làm việc</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./rae.html">
+                            <div class="icon-nav">
+                                <i class="material-icons">assignment</i>
+                            </div>
+                            <div class="label-item">Chứng từ gốc</div>
+                        </a>
+                    </li>
+                    <li class="nav-item menu-active">
+                        <a href="#">
+                            <div class="icon-nav">
+                                <i class="material-icons">book</i>
+                            </div>
+                            <div class="label-item">Sổ quỹ tiền mặt</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./report.html">
+                            <div class="icon-nav">
+                                <i class="material-icons">assessment</i>
+                            </div>
+                            <div class="label-item">Báo cáo</div>
+                        </a>
+                    </li>                   
+                </ul>
+            </div>
+            <div class="main-container">
+                    <div>
+                        <form id="frmMain" runat="server">
+                            <div>
+                                <div class="cls-contenet-header">
+                                    <div class="cls-navigation-breadcrumb cls-padding-8">
+                                        <span class="breadcrumb-children-last">
+                                            <i class="fa fa-book"></i>
+                                            <span>Sổ quỹ tiền mặt</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="frmCustomerList">
+                                    <div class="toolbar">
+                                        <div class="toolbar-body">                                          
+                                            <a id="btnAddReceipt" class="toolbar-item">
+                                                <span class="cls-btnWrap"><span class="toolbar-item-icon icon-btn-choose"></span><span class="toolbar-item-text">Chọn tham số</span></span>
+                                            </a>
+                                            <span><span class="toolbar-item-icon icon-btnStartDate"></span>
+                                            <span>Bắt đầu từ:</span>
+                                            <input type="text" id="start-date" data-type="Date" placeholder="dd/mm/yy" class="text-center">
+                                            <span>đến</span>
+                                            <input type="text" id="end-date" data-type="Date" placeholder="dd/mm/yy" class="text-center">
+                                            <a id="btnWatch" class="toolbar-item">
+                                                <span class="cls-btnWrap"><span class="toolbar-item-icon icon-btnView"></span><span class="toolbar-item-text">Xem</span></span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                    <!--Bảng danh sách chứng từ thu/chi-->
+                                    <div class="cls-gridPanel">
+                                        <table id="tblCustomerList" class="bordered cellpadding-0 cellspacing-0">
+                                            <thead>
+                                                <tr class="gridHeader">
+                                                    <th id='column-header-1' fieldData="PostedDate" DataType="Date" class="gridPanel-header-item-title width-150 no-border-left" rowspan="2">
+                                                        Ngày hạch toán<div id='column-header-1-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-2' fieldData="RefDate" DataType="Date" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Ngày chứng từ<div id='column-header-2-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="RefNo" DataType="Text" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Số chứng từ<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="RefNo" DataType="Text" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Số chứng từ<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-4' fieldData="JournalMemo" DataType="Text" class="gridPanel-header-item-title width-200" rowspan="2">
+                                                        Diễn giải<div id='column-header-4-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="RefNo" DataType="Text" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Tài khoản<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="RefNo" DataType="Text" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Tài khoản đối ứng<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-5' fieldData="TotalAmount" DataType="Money" class="gridPanel-header-item-title width-200" colspan="2">
+                                                        Số tiền<div id='column-header-5-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="RefNo" DataType="Text" class="gridPanel-header-item-title width-150" rowspan="2">
+                                                        Số tồn<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-11' fieldData="DepartmentName" DataType="Text" class="gridPanel-header-item-title width-200" rowspan="2">
+                                                        Người nộp<div id='column-header-11-sizer'></div>
+                                                    </th>
+                                                    <!--<th id='column-header-12' class="gridPanel-header-item-title width-150">
+                                                        Thành viên 5Food<div id='column-header-12-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-13' class="gridPanel-header-item-title width-150">
+                                                        Ngừng theo dõi<div id='column-header-13-sizer'></div>
+                                                    </th>-->
+                                                </tr>
+                                                <tr>
+                                                    <th id='column-header-3' fieldData="DebitAmount" DataType="Text" class="gridPanel-header-item-title width-150">
+                                                        Nợ<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                    <th id='column-header-3' fieldData="CreditAmount" DataType="Text" class="gridPanel-header-item-title width-150">
+                                                        Có<div id='column-header-3-sizer'></div>
+                                                    </th>
+                                                </tr>
+                                                <tr id="filterElement">
+                                                    <th class="no-border-left">
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input class="date-filter" elementtype="filterInput" fieldname="postedDate" placeholder="dd/mm/yy"/>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input class="date-filter" elementtype="filterInput" fieldname="refDate" placeholder="dd/mm/yy"/>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="refNoFinance" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="journalMemo" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="totalAmount" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="accountObjectName" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="reasonTypeID" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="refTypeName" />
+                                                            </div>
+    
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="refNoFinance" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">>=</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="accountObjectName" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">∗</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="IsMember5Food" />
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <!-- <th>
+                                                        <div class="gridPanel-header-item-filter">
+                                                            <a class="btn-select-filter" style="font-weight: normal">∗</a>
+                                                            <div class="input-filter">
+                                                                <input elementtype="filterInput" fieldname="StopFollow" />
+                                                            </div>
+                                                        </div>
+                                                    </th> -->
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyRAE"></tbody>
+                                        </table>
+                                    </div>
+                                    <div class="cls-bottomToolbar">
+                                        <div class="cls-bottomToolbar-body">
+                                            <div class="bottomToolbar-left">
+                                                <a class="tbar-item-control margin-right-8">
+                                                    <div class="tbar-icon-16 tbar-page-first"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-2">
+                                                    <div class="tbar-icon-16 tbar-page-prev"></div>
+                                                </a>
+                                                <a class="tbar-item-control">
+                                                    <div class="tbar-separator-horizoltal"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-2">
+                                                    <div class="tbar-text-page">Trang</div>
+                                                </a>
+                                                <div class="tbar-numberPage-box margin-right-2">
+                                                    <input id="currentPage" type="text" style="width: 40px; height: 24px; margin-right: 4px; padding-left: 4px;" value="1" />
+                                                    <span>trên</span> <span id="totalPage">1</span>
+                                                </div>
+                                                <a class="tbar-item-control margin-right-2">
+                                                    <div class="tbar-separator-horizoltal"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-8">
+                                                    <div class="tbar-icon-16 tbar-page-next"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-2">
+                                                    <div class="tbar-icon-16 tbar-page-last"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-2">
+                                                    <div class="tbar-separator-horizoltal"></div>
+                                                </a>
+                                                <a id="tbarRefresh" class="tbar-item-control margin-right-2 tbar-item-control-active" title="Tải lại">
+                                                    <div class="tbar-icon-16 tbar-refresh"></div>
+                                                </a>
+                                                <a class="tbar-item-control margin-right-8">
+                                                    <div class="tbar-separator-horizoltal"></div>
+                                                </a>
+                                                <div id="box-triggerWrap" class="targetNotEffectByMouseUp">
+                                                    <div class="tbar-combox-triggerWrap targetNotEffectByMouseUp">
+                                                        <div class="input-trigger targetNotEffectByMouseUp">
+                                                            <input id="inputTotalRecord" class="targetNotEffectByMouseUp" value="100" style="width: 36px; text-align: center; height: 22px;" />
+                                                        </div>
+                                                        <div id="arrow-combo-trigger" class="targetNotEffectByMouseUp">
+                                                        </div>
+                                                    </div>
+                                                    <div id="numberRecordSelection" class="hide-if-outside" style="display: none;">
+                                                        <a class="record-select-item" item-value="25">25</a>
+                                                        <a class="record-select-item" item-value="50">50</a>
+                                                        <a class="record-select-item" item-value="100">100</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bottomToolbar-right">
+                                                <span>Hiển thị <span id="startRecord">1</span> - <span id="endRecord">100</span> trên <span id="totalRecord">N/A</span> kết quả</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+    <script src="./static/Scripts/lib/jquery-3.2.1.min.js"></script>
+    <script src="./static/Scripts/lib/jquery-ui.js"></script>
+    <script src="./static/Scripts/lib/popper.min.js"></script>
+    <script src="./static/Scripts/lib/bootstrap.min.js"></script>
+    <script src="./static/Scripts/common/data.js"></script>
+    <script src="./static/Scripts/common/enum.js"></script>
+    <script src="./static/Scripts/common/validation.js"></script>
+    <script src="./static/Scripts/common/common.js"></script>
+    <script src="./static/Scripts/Controls/controls.js"></script>
+    <script src="./static/Scripts/common/header.js"></script>
+    <script src="./static/Scripts/Views/config.js"></script>
+    <script src="./static/Scripts/Views/general-ledger.js"></script>
+</body>
+</html>

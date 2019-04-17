@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập SME.NET</title>
+    <link rel="icon" href="./static/Contents/Icons/misa-sme-icon-min.png">
+    <link href="./static/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="./static/CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/animation.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/glyphicon.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <!-- <link href="./static/CSS/Views/login.css" rel="stylesheet" /> -->
+    <link href="./static/CSS/Views/header.css" rel="stylesheet" />
+    <link href="./static/CSS/Views/home.css" rel="stylesheet" />
+    <link href="./static/CSS/common/main.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="./static/CSS/lib/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-page"></div>
+    <div id="wraper">
+        <div id="header">
+            <div style="width: 250px">
+                <a href="/">
+                    <div class="page-content logo" style="width: 250px">
+                    </div>
+                </a>
+            </div>
+            <div class="header-user-info">
+                <div class="user-info-box">
+                    <span class="avatar-user"></span>
+                    <span class="user-info" id="user-info">
+                        
+                    </span>
+                </div>
+                <div class="user-menu-box hide-if-outside">
+                    <div id="btnChangePassword" command="ChangePassword" class="user-menu-item">Thay đổi mật khẩu</div>
+                    <div id="btnLogout"  command="Logout" class="user-menu-item">Đăng xuất</div>
+                </div>
+            </div>
+        </div>
+        <div class="register-content">
+            <div class="container body-content">
+                <div class="welcome-title text-center"><strong>Chào mừng bạn sử dụng SME.NET 2019</strong></div>
+                <div class="row">
+                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 workspace-section">
+                    <table class="table table-responsive" id="tb-company">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td style="min-width: 200px">Tên công ty</td>
+                                <td>Hành động</td>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+<!--                             <tr>     -->
+<!--                                 <td> -->
+<!--                                     1 -->
+<!--                                 </td> -->
+<!--                                 <td> -->
+<!--                                     MISA JSC -->
+<!--                                 </td> -->
+<!--                                 <td style="display: none;"></td> -->
+<!--                                 <td> -->
+<!--                                     <button type="button" class="btn btn-primary goToWorkspace"> -->
+<!--                                         <a href=/rae.html>Đi đến không gian làm việc</a> -->
+<!--                                     </button> -->
+<!--                                     <button type="button" class="btn btn-warning" id="editCompany"> -->
+<!--                                         Chỉnh sửa thông tin -->
+<!--                                     </button> -->
+<!--                                 </td> -->
+<!--                             </tr> -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-success" id="btnAdd">
+                        Thêm công ty mới
+                    </button>
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 info-section">
+                    <div class="info-header">
+                        <h3 class="label-default text-center info-title"><strong>Thông tin công ty</strong></h3>
+                    </div>
+                    <table class="table-striped table-responsive"id="tb-company-info">
+                        <thead>
+                            <tr>
+                                <td style="min-width: 100px">Danh mục</td>
+                                <td>Thông tin</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tên công ty</td>
+                                <td>Công ty cổ phần MISA</td>
+                            </tr>
+                            <tr>
+                                <td>Mã số thuế</td>
+                                <td>0101243150</td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ</td>
+                                <td>Tầng 9, tòa nhà Technosoft, phố Duy Tân - Phường Dịch Vọng Hậu - Quận Cầu Giấy - Hà Nội</td>
+                            </tr>
+                            <tr>
+                                <td>Chi nhánh</td>
+                                <td>Trụ sở chính</td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại</td>
+                                <td>024 3762 7891</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-section" id="popupAdd">
+                        <h3 class="label-default text-left add-title"><strong>Thêm công ty</strong></h3>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="group">
+                                    <input type="text" id="companyName" placeholder="" class="input-add-company" required>
+                                    <span class="icon-add-company">
+                                        <i class="far fa-building"></i>
+                                    </span>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Tên công ty</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="group">
+                                    <input type="text" id="companyTaxNumber" placeholder="" class="input-add-company" required>
+                                    <span class="icon-add-company">
+                                        <i class="fas fa-barcode"></i>
+                                    </span>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Mã số thuế</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="group">
+                                    <input type="text" id="companyTelNumber" placeholder="" class="input-add-company" required>
+                                    <span class="icon-add-company">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Số điện thoại</label>
+                                </div>
+                            </div>             
+                            <div class="col-md-6 col-xs-12">
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="icon-add-company">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </span>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Địa chỉ</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="group">
+                                    <input type="text" name="" id="companyBranch" class="input-add-company" required>
+                                    <span class="icon-add-company">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                    </span>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label class="label">Chi nhánh</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                    <div class="text-center button-add-section">
+                                        <button class="btn btn-success" id="addBtn">Thêm</button>
+                                        <button class="btn btn-danger" id="cancelBtn">Hủy bỏ</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-contact-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="footer-wrapper">
+                            <div class="misa-branch">
+                                <div class="branch-name">
+                                    MISA HÀ NỘI
+                                </div>
+                                <div class="branch-info">
+                                    <ul>
+                                        <li class="branch-tel">Tel: <b>024 3762 7891</b></li>
+                                        <li class="branch-email">Email: <a href="mailto:shsales@han.misa.com.vn">shsales@han.misa.com.vn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="misa-branch">
+                                <div class="branch-name">
+                                    MISA TP HỒ CHÍ MINH
+                                </div>
+                                <div class="branch-info">
+                                    <ul>
+                                        <li class="branch-tel">Tel: <b>028 5431 8318</b></li>
+                                        <li class="branch-email">Email: <a href="mailto:shsales@hcm.misa.com.vn">shsales@hcm.misa.com.vn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="misa-branch">
+                                <div class="branch-name">
+                                    MISA ĐÀ NẴNG
+                                </div>
+                                <div class="branch-info">
+                                    <ul>
+                                        <li class="branch-tel">Tel: <b>0236 366 7555</b></li>
+                                        <li class="branch-email">Email: <a href="mailto:shsales@dng.misa.com.vn">shsales@dng.misa.com.vn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="misa-branch">
+                                <div class="branch-name">
+                                    MISA BUÔN MA THUỘT
+                                </div>
+                                <div class="branch-info">
+                                    <ul>
+                                        <li class="branch-tel">Tel: <b>0262 381 7400</b></li>
+                                        <li class="branch-email">Email: <a href="mailto:shsales@bmt.misa.com.vn">shsales@bmt.misa.com.vn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="misa-branch">
+                                <div class="branch-name">
+                                    MISA CẦN THƠ
+                                </div>
+                                <div class="branch-info">
+                                    <ul>
+                                        <li class="branch-tel">Tel: <b>0292 376 6468</b></li>
+                                        <li class="branch-email">Email: <a href="mailto:shsales@cth.misa.com.vn">shsales@cth.misa.com.vn</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-bar">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="contact-item">
+                                <div class="row">
+                                    <div class="col-md-12 no-padding-left no-padding-right">
+                                        <p class="copyright  text-center">
+                                            <span id="pcopyright">Copyright © 2017 - 2018 MISA JSC</span>
+                                            <a class="a-footer" target="_blank" href="http://www.misa.com.vn">www.misa.com.vn</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="./static/Scripts/lib/jquery-3.2.1.min.js"></script>
+    <script src="./static/Scripts/lib/bootstrap.min.js"></script>
+    <script src="./static/Scripts/lib/popper.min.js"></script>
+    <script src="./static/Scripts/common/validation.js"></script>
+    <script src="./static/Scripts/common/header.js"></script>
+    <script src="./static/Scripts/common/common.js"></script>
+	<script src="./static/Scripts/Views/home.js"></script>
+	<script src="./static/Scripts/Views/config.js"></script>
+</body>
+</html>

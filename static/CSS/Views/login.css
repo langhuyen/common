@@ -1,0 +1,157 @@
+﻿.register-content {
+    height: calc(100vh - 209px);
+    min-height: 640px;
+    padding: 60px 0px;
+    background: url(../../Contents/Images/Untitled-2_nen.png);
+    background-size: cover;
+    position: relative;
+}
+    .register-content .black-layer {
+        background: #000;
+        opacity: 0.7;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .register-content  .main-section {
+        height: 100%;
+    }
+    .register-content  .main-section .inner-section {
+        height: 100%;
+        background: #f7f8fb;
+    }
+    .register-content .product-images {
+        padding: 90px 60px 65px 90px;
+    }
+    .register-content .login-form {
+        border-radius: 4px;
+        /* border: 1px solid #ededed; */
+        padding: 50px;
+        /* min-width: 450px; */
+        height: 100%;
+        background: #fff;
+    }
+        .register-content .login-form .login-title {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0px 30px 0px;
+            text-transform: uppercase;
+        }
+            .logo-img {
+                height: 50px;
+                width: 50px;
+            }
+        .register-content .login-form .username-area {
+            margin-bottom: 15px;
+        }
+        .register-content .login-form input{
+            display:block;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 13px 15px; 
+            border: 1px solid #ccc;
+            height: 56px;
+            width: 70%;
+        }
+        .register-content .label {
+            color:#999;
+            font-size:14px;
+            font-weight:normal;
+            position:absolute;
+            pointer-events:none;
+            top: 17px;
+            left: 97px;
+            transition:0.2s ease all;
+            -moz-transition:0.2s ease all;
+            background-color: #fff;
+            padding: 0px 5px;
+            -webkit-transition:0.2s ease all;
+        }
+            .register-content .login-form input:focus {
+                border: 2px solid #1a73e8;
+            }
+            .register-content .login-form input:focus ~ .label, .register-content .login-form input:valid ~ .label {
+                transform: translateY(-28px);
+                font-size:12px;
+                color: #1a73e8;
+            }
+.footer-contact-content {
+    width: 100%;
+    background-color: #ffffff;
+    color: #666666;
+    /* height: 244px; */
+    overflow: hidden;
+}
+    .footer-contact-content .footer-wrapper {
+        padding: 15px 30px;
+        width: 100%;
+        float: left;
+    }
+        .footer-contact-content .footer-wrapper .misa-branch {
+            width: 20%;
+            padding-left: 8px;
+            padding-right: 8px;
+            float: left;
+            color: #666;
+        }
+            .footer-contact-content .footer-wrapper .misa-branch .branch-name {
+                padding-bottom: 8px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #595858;
+            }
+            .branch-info ul {
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+                .branch-info ul li {
+                    font-size: 12px;
+                    line-height: 18px;
+                    list-style-type: none;
+                    color: #757575;
+                }
+    .footer-contact-content .contact-item {
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    }
+        .footer-contact-content .contact-item .row {
+            color: #fff;
+            font-size: 12px;
+            padding-bottom: 0 !important;
+        }
+        .copyright {
+            margin-bottom: 0;
+        }
+            .copyright #pcopyright {
+                text-transform: none;
+                font-size: 12px;
+            }
+            .copyright .a-footer {
+                font-size: 12px;
+                color: #fff;
+                padding-left: 40px;
+            }
+.bottom-bar {
+    background-color: #026b97;
+    width: 100%;
+}
+#btnLogin {
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 10px 40px;
+    margin: 25px 0 5px 0;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+    .register-content .label {
+        left: 120px;
+    }
+}

@@ -1,0 +1,223 @@
+
+.body-content {
+	min-height: calc(100vh - 209px);
+}
+table {
+	border-top: none;
+}
+thead {
+	font-weight: bold;
+	font-size: 15px;
+	color: #32465a;
+}
+td {
+	padding-left: 5px;
+}
+.welcome-title {
+	font-size: 24px;
+	padding: 15px 0px;
+	color: #32465a;
+}
+.register-content {
+	background-color: #F5F5F5;
+}
+	.register-content .body-content {
+		background-color: #F5F5F5;
+	}
+		.register-content .body-content .workspace-section{
+			
+			padding-bottom: 20px;
+		}
+#tb-company-add {
+	width: 100%;
+	line-height: 30px;
+}
+#tb-company-info {
+	line-height: 32px;
+}
+
+.btn-primary {
+	background-color: #2baaed;
+	border-color: #2baaed;
+}
+
+.btn-warning {
+	background-color: #FFC36F;
+	border-color: #FFC36F;
+	color: #fff;
+}
+
+.btn-success {
+	background-color: #31CC54;
+	border-color: #31CC54;
+}
+.add-section {
+	padding-top: 20px;
+	display: none;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+	margin-top: 20px;
+}
+.info-section {
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+	width: 100%;
+	padding-bottom: 10px;
+}
+	.info-section .info-title {
+		padding-top: 10px;
+	}
+.button-add-section {
+	margin-top: 10px;
+}
+	.button-add-section button {
+		width: 100px;
+		font-size: 15px;
+	}
+.group {
+	margin-bottom: 30px;
+}
+input{
+	font-size:14px;
+	padding:10px 10px 10px 5px;
+	display:block;
+	width: 400px;
+	border:none;
+	border-bottom:1px solid #757575;
+	background-color: #F5F5F5;
+	position: relative;
+	left: 40px;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+	color:#999; 
+	font-size:14px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	top:10px;
+	left: 55px;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label {
+	top:-20px;
+	font-size:14px;
+	color:#5264AE;
+  }
+  .icon-add-company {
+	  position: absolute;
+	  bottom: 40px;
+	  left: 25px;
+  }
+  input:focus ~ .icon-add-company,input:valid ~ .icon-add-company {
+	color:#5264AE;
+	left: 15px;
+	font-size: 15px;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+  }
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:400px; left: 40px }
+  .bar:before, .bar:after 	{
+	content:'';
+	height:2px; 
+	width:0;
+	bottom:1px; 
+	position:absolute;
+	background:#5264AE; 
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+	left:50%;
+  }
+  .bar:after {
+	right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+	width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+	position:absolute;
+	height:60%; 
+	width:100px; 
+	top:25%; 
+	left: 40px;
+	pointer-events:none;
+	opacity:0.5;
+  }
+.label-default {
+	margin-bottom: 20px;
+}
+.footer-contact-content {
+	width: 100%;
+	background-color: #ffffff;
+	color: #666666;
+	/* height: 244px; */
+	overflow: hidden;
+}
+	.footer-contact-content .footer-wrapper {
+			padding: 15px 30px;
+			width: 100%;
+			float: left;
+	}
+			.footer-contact-content .footer-wrapper .misa-branch {
+					width: 20%;
+					padding-left: 8px;
+					padding-right: 8px;
+					float: left;
+					color: #666;
+			}
+					.footer-contact-content .footer-wrapper .misa-branch .branch-name {
+							padding-bottom: 8px;
+							font-size: 14px;
+							font-weight: bold;
+							color: #595858;
+					}
+					.branch-info ul {
+							padding-left: 0;
+							margin-bottom: 0;
+					}
+							.branch-info ul li {
+									font-size: 12px;
+									line-height: 18px;
+									list-style-type: none;
+									color: #757575;
+							}
+	.footer-contact-content .contact-item {
+			color: white;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin: 0 auto;
+	}
+			.footer-contact-content .contact-item .row {
+					color: #fff;
+					font-size: 12px;
+					padding-bottom: 0 !important;
+			}
+			.copyright {
+					margin-bottom: 0;
+			}
+					.copyright #pcopyright {
+							text-transform: none;
+							font-size: 12px;
+					}
+					.copyright .a-footer {
+							font-size: 12px;
+							color: #fff;
+							padding-left: 40px;
+					}
+.bottom-bar {
+	background-color: #026b97;
+	width: 100%;
+}

@@ -1,0 +1,27 @@
+@media print {
+    html,body {
+        margin: 0 !important; 
+        padding: 0 !important;
+    }
+    .main-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top: none;
+    }
+    .report-section, #header, #printBtn, hr {
+        display: none;
+    }
+    @page {
+        size: A3 landscape;
+    }
+    table {
+        page-break-before: avoid;
+    }
+    .main-content .report-table .has-scroll {
+        max-height: 100%;
+    }
+    .main-content .report-table {
+        overflow-x: hidden;
+    }
+}

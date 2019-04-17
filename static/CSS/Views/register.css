@@ -1,0 +1,1914 @@
+body {
+}
+
+.red-color {
+    color: red;
+}
+
+.btnRegisterIndex{
+    color: #026b97 !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.register-content {
+    /*display: -webkit-flex;*/
+    flex: 1 1 auto;
+    background: #e9eaea;
+}
+.container.body-content {
+    align-items: center;
+    justify-content: center;
+    /*display: flex;*/
+    /*display: -webkit-flex;*/
+    /* padding: 60px 0; */
+}
+.page-content {
+    width: 800px;
+    /* margin: 0 auto; */
+}
+.container-reg {
+    /* margin: 104px 0; */
+    /* padding: 60px 0; */
+    /* float: left; */
+    height: 560px;
+    background-color: #fff;
+    margin: 25px 0 25px 0;
+    width: 100%;
+    position: relative;
+}
+    .register-content .content-left {
+        width: 336px;
+        position: relative;
+        bottom: 0;
+    }
+
+        .register-content .content-left img {
+            position: absolute;
+        }
+
+        .register-content .content-left #text {
+            z-index: 100;
+            position: absolute;
+            color: white;
+            padding: 20px;
+            width: 300px;
+        }
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.register-content .content-right {
+    position: absolute;
+    left: 336px;
+    width: calc(100% - 336px);
+    background-color: #fff;
+    padding: 20px 30px 0 0;
+    height: 100%;
+}
+
+
+.field-text-head {
+    color: #026b97;
+    /* text-transform: uppercase; */
+    font-size: 24px;
+    text-align: left;
+    font-weight: 500;
+    /* margin-top: 20px; */
+}
+
+/*.panel-main {
+    float: left;
+}*/
+
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+
+.field-logo-head {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.field-logo-head-success {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.field-text-head {
+    color: #026b97;
+    /*text-transform: uppercase;*/
+    font-size: 24px;
+    text-align: left;
+    font-weight: 500;
+    /*margin-top: 20px;*/
+}
+
+.field-text-head-active {
+    color: #026b97;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.field-text-advertisment {
+    color: #212121;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.field-text-head img {
+    width: 89px;
+    height: 93px;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+    .font-14 .riTextBox {
+        font-size: 14px !important;
+    }
+
+    .font-14 li {
+        font-size: 14px !important;
+    }
+
+html {
+    padding: 0 !important;
+}
+
+.center {
+    margin: auto;
+    width: 980px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.no-padding-horizon {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.p-margin {
+    margin-bottom: 4px !important;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Overwrite*/
+.riTextBox {
+    height: 30px !important;
+    background: white !important;
+    border-color: #9FD4D6 !important;
+    color: #000 !important;
+}
+
+    .riTextBox:focus, .RadComboBox_Metro .rcbFocused {
+        border-color: #66AFE9 !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6) !important;
+        outline: 0 none !important;
+        background: white !important;
+    }
+
+.register-combo table tr {
+    height: 29px;
+}
+
+.reponsive-combobox ul li {
+    min-height: 25px !important;
+}
+
+.reponsive-combobox table tr .rcbInputCell {
+    border-color: #9FD4D6 !important;
+}
+
+.rcbInputCell {
+    border-color: #9FD4D6 !important;
+}
+
+.rcbArrowCell {
+    border-color: #9FD4D6 !important;
+}
+
+.RadComboBox_Metro .rcbFocused .rcbReadOnly .rcbInputCell, .RadComboBox_Metro .rcbFocused .rcbReadOnly .rcbInput {
+    color: black !important;
+}
+
+.RadComboBox_Metro .rcbFocused .rcbReadOnly .rcbInputCell, .RadComboBox_Metro .rcbFocused .rcbArrowCell {
+    /*background: #63c044 !important;*/
+}
+
+.RadComboBox_Metro .rcbReadOnly .rcbInputCell {
+    background: white !important;
+}
+
+.capcha-confirm input {
+    height: 30px !important;
+    background: white !important;
+    border: 1px solid #9AA0A6;
+    color: #3B3B3B;
+    font: 12px "Segoe UI",Arial,Helvetica,sans-serif;
+    width: 100%;
+    margin-right: 4px;
+    border-color: #9FD4D6 !important;
+    padding-left: 4px;
+}
+
+.capcha-confirm p {
+    margin-top: 8px;
+    margin-bottom: 0px !important;
+    height: 30px;
+}
+
+.capcha-confirm .div_ex {
+    font-weight: normal !important;
+    margin-left: 0 !important;
+}
+
+.capcha-confirm input:focus {
+    border-color: #66AFE9 !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6) !important;
+    outline: 0 none !important;
+    background: white !important;
+}
+
+.capcha-confirm {
+    position: relative;
+}
+
+.rcRefreshImage {
+    background: url("../images/page/refresh-capcha.png") no-repeat scroll 0 0 transparent;
+    top: 10px;
+    display: inline-block !important;
+    float: right;
+    height: 49px;
+    position: absolute;
+    width: 48px;
+    right: 90px;
+    left: 195px;
+}
+
+.register-icon {
+    margin-left: 15px !important;
+    padding-right: 16px;
+    width: 215px;
+}
+
+.navbar-brand {
+    float: left !important;
+    padding: 15px 15px 0px 0px !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+}
+
+
+.register-header {
+    background: white !important;
+    border: none !important;
+    margin-bottom: 0px !important;
+}
+
+.misa-bg-banner {
+    background: url(../images/page/logo-misa.png) no-repeat;
+    width: 130px;
+    height: 46px;
+    float: right;
+    background-size: 130px;
+}
+
+.register-label {
+    min-height: 56px;
+    background-color: #63c044;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    line-height: 56px;
+    margin-top: 8px;
+}
+
+.i-required {
+    color: red;
+}
+
+.content-present {
+    background: url(../images/page/present512.png) no-repeat;
+    width: 512px;
+    height: 542px;
+}
+
+.container.body-content {
+    align-items: center;
+    justify-content: center;
+    /*display: flex;
+    display: -webkit-flex;*/
+    padding-top: calc(50vh - 430px);
+}
+
+.transparent {
+    /*background: rgb(255, 255, 255) !important;
+    background: rgba(255, 255, 255, 0.8) !important;*/
+}
+
+.register-content {
+    /*background: #E0E7E5 url(../images/page/background.png) repeat-x;*/
+    /*background: url(../images/page/background-top.png) no-repeat;*/
+    background: #e9eaea;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 1 auto;
+}
+
+.footer-wrapper {
+    padding: 15px 10px;
+    width: 100%;
+    float: left;
+    /* font-family: Roboto; */
+}
+
+.contact-label {
+    padding-top: 60px;
+}
+
+    .contact-label p {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+
+    .contact-label .label-cap {
+        font-size: 30px;
+    }
+
+    .contact-label .label-email a:link, .contact-label .label-email a:active, .contact-label .label-email a:visited {
+        color: white;
+    }
+
+.misa-address {
+}
+
+    .misa-address .item-name {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 38px;
+    }
+
+    .misa-address .item-address {
+        font-size: 12px;
+        padding-top: 30px;
+    }
+
+.address-item .item-email a {
+    color: #fffff1;
+}
+
+.address-item {
+    text-align: justify;
+}
+
+.horizon-separator {
+    width: 100%;
+    margin-top: 28px;
+    border-top: 1px solid #258a00;
+    border-bottom: 1px solid #8ec67a;
+}
+
+.phone-support {
+    margin-top: 32px;
+}
+
+.social-support {
+    float: right;
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+
+    .social-support a {
+        float: left;
+    }
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .social-support img {
+        width: 48px;
+    }
+}
+
+
+.social-icon {
+    background: url(../images/page/social-network.png) no-repeat;
+}
+
+.fb-social {
+    background-position: 0px 0px;
+    width: 64px;
+    height: 64px;
+}
+
+.gp-social {
+    background-position: -68px 0px;
+    width: 64px;
+    height: 64px;
+}
+
+.tw-social {
+    background-position: -136px 0px;
+    width: 64px;
+    height: 64px;
+}
+
+.yt-social {
+    background-position: -204px 0px;
+    width: 64px;
+    height: 64px;
+}
+
+.footer-contact-content {
+    /*bottom: 0;
+    position: absolute;*/
+    width: 100%;
+    background-color: #ffffff;
+    color: #666666;
+    /*height: 244px;*/
+    overflow: hidden;
+}
+
+.contact-item {
+    background: #026b97;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+    .contact-item .row {
+        color: #fff;
+        font-size: 12px;
+        padding-bottom: 0 !important;
+    }
+
+.contact-support {
+    text-align: right;
+}
+
+
+.register-form .row {
+    padding-bottom: 10px !important;
+    position: relative;
+}
+
+.field-text {
+    font-weight: bold;
+    color: #212121;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.field-text-italic {
+    color: #757575;
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+
+.register-host {
+    border: 1px solid #9FD4D6;
+    height: 30px;
+    border-left: none;
+    display: block;
+    line-height: 30px;
+    color: #63c044;
+    background: #fafafa;
+    /*border-radius: 5px;*/
+}
+
+    .register-host span {
+        color: #026b97;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 2px;
+    }
+
+.chkAccept {
+    display: inline-block;
+}
+
+    .chkAccept input {
+        float: left;
+    }
+
+    .chkAccept label {
+        margin-left: 4px;
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 12px;
+        color: #000;
+    }
+
+.license-agreement {
+    padding-right: 0 !important;
+}
+
+.license-agreement-link {
+    font-size: 12px;
+    color: #026b97;
+    text-decoration: underline;
+}
+
+    .license-agreement-link:hover {
+        color: #026b97;
+    }
+
+.register-button-wrapper {
+    width: 100%;
+    /*margin-top: 15px;*/
+    text-align: center;
+}
+
+.button-register {
+    background: none !important;
+    padding-left: 0 !important;
+    height: 40px !important;
+    /*box-shadow: #BBB 3px 3px 5px 0px;*/
+}
+
+    .button-register input, .button-register-success, .button-register-resendSMS {
+        background: #026b97 !important;
+        color: white !important;
+        height: 45px !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        font-family: Roboto,Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+        text-align: center !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        text-transform: uppercase;
+        cursor:pointer;
+    }
+
+.button-register-success {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+}
+
+    .button-register-success:hover {
+        text-decoration: none;
+    }
+
+.pen-icon {
+    background: url(../images/page/pen.png) no-repeat;
+    width: 24px !important;
+    height: 24px !important;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.register-result-info {
+    /*min-height: 564px !important;*/
+    background-color: #fff;
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+    /*margin: 60px 0 130px 0;*/
+    /*padding: 30px 195px;*/
+}
+
+    .register-result-info.send-info {
+        padding: 16px 0 !important;
+        margin: 16px;
+    }
+
+.title-success img {
+    margin-right: 8px;
+}
+
+.cukcuk {
+    color: #63c044;
+    font-weight: bold;
+}
+
+.guidStep {
+    text-align: center;
+    line-height: 22px;
+    color: #666;
+}
+
+.title-success {
+    margin-left: 0;
+}
+
+#divReEmail {
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+#ResendEmailSuccess {
+    line-height: 22px;
+    color: #63c044;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.more-title {
+    background: #63c044;
+    text-align: center;
+    color: white;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon-sms-cls {
+    background: url(../images/page/sms.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.acitive-icon {
+    background: url(../images/page/active-icon-24.png) no-repeat;
+    width: 24px !important;
+    height: 24px !important;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.resend-sms {
+}
+
+.error-info span {
+    font-weight: bold;
+    line-height: 32px;
+    margin-left: 4px;
+}
+
+.validation {
+    color: Red;
+    right: 0;
+    top: 26px;
+    height: 22px;
+    font-size: 22px;
+    width: 10px;
+    position: absolute;
+}
+
+.company-url-empty-error {
+    color: Red;
+    font-size: 22px;
+    height: 22px;
+    margin-left: 8px;
+    margin-top: 5px;
+    position: absolute;
+    right: -2px;
+    top: -28px;
+}
+
+.contact-name-validation {
+    right: -15px;
+    top: 8px;
+}
+
+.sumary-validate {
+    color: red;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+    .sumary-validate ul {
+        padding-left: 13px;
+        margin-bottom: 0;
+    }
+
+.img-present {
+    margin: 12px 0;
+}
+
+.company-url-unicode-error {
+    color: red;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.register-info .more-title {
+    margin-bottom: 8px;
+}
+
+    .register-info .more-title .cukcuk {
+        color: white !important;
+    }
+
+.register-info {
+    text-align: justify;
+    line-height: 22px;
+}
+
+.ms-address {
+    text-align: left;
+}
+
+.captcha-guide {
+    margin-top: 2px;
+    color: #5F5D5D;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .cols-10 .col-md-2 {
+        width: 16.525252525252664%;
+    }
+
+        .cols-10 .col-md-2.long-label {
+            width: 25%;
+        }
+
+    .register-form, .panel-main, .register-result-info {
+        width: 100%;
+    }
+}
+
+
+
+.weakpass {
+    display: block;
+    color: #F44336;
+    border-bottom: 4px solid #F44336;
+    margin-top: 8px;
+}
+
+.stillweakpass {
+    display: block;
+    color: #F44336;
+    border-bottom: 4px solid #F44336;
+    margin-top: 8px;
+}
+
+.goodpass {
+    display: block;
+    color: #FF9800;
+    border-bottom: 4px solid #FF9800;
+    margin-top: 8px;
+}
+
+.strongpass {
+    display: block;
+    color: #5AB963;
+    border-bottom: 4px solid #5AB963;
+    margin-top: 8px;
+}
+
+.code-vn-cls {
+    background: #fff url('../../Contents/Images/Register/vn-flag.png') no-repeat scroll 8px 50%;
+    border: 1px solid #9fd4d6;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    font-size: 12px;
+    color: #026b97;
+    font-weight: bold;
+}
+
+
+.resendActiveCode-cls {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    padding-top: 10px;
+}
+
+.flag-cls-resend {
+    width: 120px;
+    display: block;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    padding-right: 0;
+}
+
+.btn-sendActiveCode-cls {
+    display: block;
+    position: absolute;
+    width: 130px;
+    left: auto;
+    right: 0px;
+    top: 0px;
+}
+
+.txt-resendActiveCode {
+    width: calc(100% - 120px);
+    display: inline-flex;
+}
+
+.img-support {
+    display: block;
+    bottom: 0px;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    margin: 0px auto;
+    max-width: 515px;
+}
+
+.display-img-none {
+    display: none;
+}
+
+.img-support img {
+    width: 100%;
+    height: 100%;
+}
+
+.dv-password {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.show-pass {
+    display: block;
+    width: 32px;
+    height: 28px;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    background: url(../images/register/eye1.png) no-repeat;
+}
+
+    .show-pass:hover {
+        cursor: pointer;
+    }
+
+.emptyMessage-cls {
+    /*color: #a4abb2;*/
+    /*font: italic 12px "Segoe UI",Arial,Helvetica,sans-serif;*/
+    left: 5px;
+    position: absolute;
+    /*top: 13px;*/
+}
+
+.warning-text {
+    color: red;
+    font-weight: 600 !important;
+    font: 12px "Segoe UI",Arial,Helvetica,sans-serif;
+    display: none;
+    margin-left: 15px;
+}
+
+.requiredstar {
+    color: red !important;
+    font-weight: 900 !important;
+    font-size: large;
+    font: 12px "Segoe UI",Arial,Helvetica,sans-serif;
+    display: none;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+.email-cls, .email-cls:focus {
+    background: #fff url(../images/email-icon.png) no-repeat scroll 8px 50% !important;
+    background-size: 25px !important;
+    padding-left: 40px !important;
+    width: calc(100% - 20px) !important;
+}
+
+.phone-cls {
+    width: calc(100% - 20px) !important;
+}
+
+.emptyMessage-cls-confirmPassword {
+    position: absolute;
+    left: 5px;
+}
+
+/*.dv-password:hover .emptyMessage-cls {
+    color: #3B3B3B;
+}
+
+.emptyMessage-cls:hover {
+    color: #3B3B3B;
+}*/
+
+.exist-mobile-cls, .exist-companyurl-cls {
+    display: none;
+    background: url("../images/register/disc.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
+    color: red;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 4px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
+    padding-left: 9px;
+    float: left;
+}
+
+.text-field-custom-cls {
+    height: 30px !important;
+    display:block;
+    width:100%;
+}
+
+.no-border-top-left {
+    border-top-left-radius: 0 !important;
+}
+
+.no-border-top-right {
+    border-top-right-radius: 0 !important;
+}
+
+.no-border-bottom-left {
+    border-bottom-left-radius: 0 !important;
+}
+
+.no-border-bottom-right {
+    border-bottom-right-radius: 0 !important;
+}
+
+.field-text-Resend {
+    padding-bottom: 5px;
+    font-size: 12px;
+    text-align: justify;
+    width: auto;
+    color: #000;
+}
+
+.plnResend {
+    display: none;
+}
+
+.a-footer {
+    font-size: 12px;
+    color: #fff;
+    padding-left: 40px;
+}
+
+    .a-footer:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+.page-content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*CSS Container*/
+
+.container-reg {
+    height: 560px;
+    background-color: #fff;
+    margin: 25px 0;
+    width: 100%;
+    position: relative;
+}
+
+.content-left {
+    width: 336px;
+    position: relative;
+    bottom: 0;
+}
+
+    .content-left h4 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .content-left img {
+        position: absolute;
+    }
+
+    .content-left ul {
+        padding: 0;
+    }
+
+        .content-left ul li {
+            /* background: url(../images/register/check.png) no-repeat left top; */
+            margin: 5px;
+            list-style: none;
+            padding: 3px 0 3px 25px;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+
+    .content-left #text {
+        z-index: 100;
+        position: absolute;
+        color: white;
+        /*margin-top: 15px;*/
+        padding: 20px;
+        width: 300px;
+    }
+
+.content-right {
+    position: absolute;
+    left: 336px;
+    width: calc(100% - 336px);
+    background-color: #fff;
+    padding: 20px 30px 0 0;
+    height: 100%;
+}
+    .content-right .sumary-validate {
+        display: none;
+    }
+.imgCaptcha {
+    float: left;
+}
+
+.refreshCaptcha {
+    float: left;
+    margin: 12px 0 0 3px;
+}
+
+.divCaptcha {
+    margin: 0 !important;
+    padding-right: 0px;
+}
+
+.captcha {
+    padding: 0px;
+    padding-right: 15px;
+    padding-top:5px;
+}
+
+    .captcha > span {
+        margin: 6px 0;
+    }
+
+.row {
+    color: #525252;
+}
+
+.r-register-host {
+    text-align: center;
+}
+
+html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty, .emptyMessage-cls, .emptyMessage-cls-confirmPassword {
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+    font-style: normal !important;
+}
+
+.contactValidate {
+    top: 4px !important;
+}
+
+.text-desc {
+    color: #666;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+    .text-desc a {
+        color: #026b97 !important;
+        font-weight: bold;
+    }
+
+        .text-desc a:hover {
+            text-decoration: none;
+        }
+
+.pnlMoreInfo, .plnResend {
+    width: 400px;
+    margin: 0 auto 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.loading-area {
+    padding: 30px 170px;
+}
+
+.frmSuccess {
+    background: url('../images/register/support-ico.png') no-repeat center center;
+    width: 100%;
+    height: 77px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.panel-support {
+    margin: 30px auto 0 auto;
+}
+
+.support-img {
+    width: 100px;
+    height: 77px;
+    float: left;
+    background: url('../images/register/support-ico.png') no-repeat 25px center;
+}
+
+.support-info {
+    float: left;
+}
+
+.support-contact {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.misa-support {
+    background: url('../images/register/support_1.png') no-repeat left top;
+    padding-left: 35px;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+
+.support-mail {
+    background: url('../images/register/email24x24.png') no-repeat left center;
+    padding-left: 35px;
+    font-weight: 500;
+}
+
+    .misa-support a:hover, .support-mail a:hover {
+        text-decoration: none;
+    }
+
+#pnlInfo {
+    margin-top: 40px;
+}
+
+.info-left {
+    float: left;
+    width: 280px;
+}
+
+.info-right {
+    float: left;
+    width: calc(100% - 280px);
+    padding: 0 20px 0 20px;
+}
+
+.head-success {
+    color: #026b97;
+}
+
+/*End Container*/
+
+/*#region CSS Footer*/
+.copyright {
+    margin-bottom: 0;
+}
+
+#pcopyright {
+    text-transform: none;
+    font-size: 12px;
+}
+
+.misa-branch {
+    width: 20%;
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+    color: #666;
+}
+
+    .misa-branch .branch-name {
+        padding-bottom: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #595858;
+        /*text-transform: uppercase;*/
+    }
+
+.branch-info ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+    .branch-info ul li {
+        font-size: 12px;
+        line-height: 18px;
+        list-style-type: none;
+        color: #757575;
+    }
+
+.infoText {
+    color: #026b97 !important;
+    display: none;
+    font-size: 9px;
+    font-weight: normal;
+    left: 136px;
+    padding: 4px 0 4px 4px;
+    position: absolute;
+    top: -1px;
+    z-index: 999;
+}
+
+#branchName {
+    position: relative;
+}
+
+    #branchName .infoWarning {
+        cursor: pointer;
+        transition: all 0.2s ease-in 0.2s;
+    }
+
+        #branchName .infoWarning:hover .infoText {
+            display: block;
+        }
+
+.chkAccept label {
+    font-weight: normal !important;
+}
+
+/*#info {
+    float: left;
+    background: url("../images/register/info.png") no-repeat 0 0;
+}*/
+
+
+/*.RadComboBox .rcbInputCell {
+    height: 30px !important;
+    line-height: 30px !important;
+}*/
+
+/*#endregion */
+
+
+
+.contact-item .last {
+    margin-bottom: 0;
+}
+
+
+html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty {
+    color: #525252 !important;
+}
+
+.button-register-resendSMS {
+    padding: 13px 20px;
+}
+
+    .button-register-resendSMS:hover {
+        text-decoration: none;
+    }
+
+.dvResend {
+    width: 100%;
+}
+
+.branch-email a {
+    color: #026b97;
+    text-decoration: none;
+}
+
+    .branch-email a:hover {
+        text-decoration: none;
+    }
+
+.contentWrap {
+    width: 675px;
+    margin: 0 auto;
+}
+
+.footer-contact-content .support {
+    overflow: hidden;
+    padding: 10px 0;
+    color: #026b97;
+    font-weight: bold;
+}
+
+    .footer-contact-content .support .support-left {
+        background: url('../images/register/icon-support.png') no-repeat;
+        float: left;
+        height: 18px;
+    }
+
+        .footer-contact-content .support .support-left .callcenter {
+            padding: 0 55px 3px 22px;
+        }
+
+        .footer-contact-content .support .support-left .mailSupport {
+            padding-left: 22px;
+            background: url('../images/register/icon-support.png') no-repeat 0 -48px;
+        }
+
+    .footer-contact-content .support a {
+        color: #026b97;
+        text-decoration: none;
+    }
+
+    .footer-contact-content .support .support-right {
+        background: url('../images/register/icon-support.png') no-repeat 0 -23px;
+        float: right;
+        height: 18px;
+    }
+
+        .footer-contact-content .support .support-right a {
+            padding-left: 22px;
+        }
+
+
+#empMISA {
+    background: url('../images/register/iconArrow.png') no-repeat 0 1px;
+    padding-left: 21px;
+    color: #026b97;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal !important;
+}
+
+.arrowUp {
+    background-position: 0 -43px !important;
+}
+
+#empCode {
+    display: none;
+    transition: all 0.2s linear 0.2s;
+}
+
+.visibleCode {
+    display: block !important;
+}
+
+
+#advertise {
+    width: 100%;
+    background: #cdcecf;
+}
+
+#advertise-free-trailer {
+    margin: 0 auto 20px auto;
+    width: 728px;
+}
+
+@media (min-width: 992px) {
+    .divCaptcha {
+        width: 31.333333%;
+    }
+
+    .captcha {
+        width: 68.666667%;
+    }
+}
+
+@media (min-height : 800px) {
+    .main, #wraper {
+        margin: 0;
+        min-height: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-height: 800px) {
+    .main, #wraper {
+        height: auto !important;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main, #wraper {
+        height: calc(100% + 90px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .col-md-5 {
+        width: 123px;
+        float: left;
+    }
+
+    .col-md-7 {
+        width: calc(100% - 123px);
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .divCaptcha {
+        width: 31.333333%;
+    }
+
+    .captcha {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    #wraper {
+        display: block;
+    }
+
+    #advertise {
+        display: none;
+    }
+
+    .footer-contact-content .support {
+        color: #026b97;
+        padding: 10px 0 30px 0;
+    }
+
+        .footer-contact-content .support a {
+            color: #026b97;
+        }
+
+    .footer-contact-content {
+        background-color: #026b97;
+    }
+
+        .footer-contact-content .misa-branch {
+            color: #fff;
+        }
+
+    .contact-item {
+        background-color: #026b97;
+    }
+
+    #pcopyright {
+        font-size: 12px;
+    }
+
+    .page-content {
+        width: 425px;
+    }
+
+    .register-content {
+        background: #fff;
+        /*padding: 85px 0;*/
+    }
+
+    .container.body-content {
+        width: 405px !important;
+    }
+
+    .container-reg {
+        width: 405px;
+        height: auto;
+    }
+
+        .container-reg .content-left {
+            display: none;
+        }
+
+        .container-reg .content-right {
+            width: 100%;
+            padding: 0;
+            position: relative;
+            left: 0;
+        }
+
+    .item-content {
+        width: 405px;
+    }
+
+    .content-right {
+        padding: 30px 0;
+    }
+
+    .field-text {
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    #empMISA {
+        font-size: 12px;
+    }
+
+    .field-text-head {
+        font-size: 25px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .code-vn-cls {
+        float: left;
+        width: 120px;
+        margin-top: 1px;
+        font-size: 16px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+    }
+
+    .register-host {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .riTextBox {
+        font-size: 16px !important;
+    }
+
+    .r-contact-name {
+        float: right;
+        width: calc(100% - 130px);
+    }
+
+    .field-text-italic {
+        font-style: normal;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .infoText {
+        left: 182px;
+        top: 2px;
+    }
+
+    .r-company-url {
+        width: calc(100% - 120px);
+        float: left;
+    }
+
+    .r-register-host {
+        width: 120px;
+        float: left;
+    }
+
+    html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty, .emptyMessage-cls, .emptyMessage-cls-confirmPassword {
+        font-size: 12px !important;
+        line-height: 40px;
+    }
+
+    .register-button-wrapper {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        /*background-color: #026b97;*/
+        text-align: center;
+    }
+
+    .button-register {
+        box-shadow: none;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        width: 405px;
+        float: none;
+        margin: 0 auto;
+        border-top: 0;
+        padding: 35px 0;
+        overflow: hidden;
+    }
+
+    .misa-branch {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 45px;
+    }
+
+        .misa-branch:last-child {
+            padding-bottom: 0;
+        }
+
+        .misa-branch .branch-name {
+            padding-bottom: 15px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: normal;
+        }
+
+    .branch-info ul li {
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    #pcopyright {
+        font-size: 16px;
+        text-transform: initial;
+    }
+
+    .a-footer {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .button-register input, .button-register-success, .button-register-resendSMS {
+        font-size: 16px !important;
+        height: 38px !important;
+        line-height: 38px !important;
+        width: 100%;
+        cursor:pointer !important;
+    }
+
+    .button-register-resendSMS {
+        padding: 10px 20px;
+    }
+
+    .pnlMoreInfo, .plnResend {
+        padding: 0 !important;
+        width: 425px;
+    }
+
+    .field-text-head-active {
+        font-size: 25px;
+    }
+
+    .responsive {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .text-desc {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .dvResend {
+        width: 100%;
+    }
+
+        .dvResend .field-text-head {
+            font-size: 24px;
+        }
+
+    .field-text-Resend {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .flag-cls-resend {
+        float: left;
+        padding-right: 0;
+    }
+
+    .txt-resendActiveCode {
+        float: left;
+        width: calc(100% - 123px);
+    }
+
+    .flag-cls-resend .code-vn-cls {
+        margin-top: 0 !important;
+        background-color: #fff;
+    }
+
+    .text-field-custom-cls {
+        height: 40px !important;
+    }
+
+    .loading-area {
+        padding: 0 !important;
+    }
+
+    .register-result-info {
+        font-size: 16px;
+    }
+
+    .branch-email a {
+        color: #fff;
+    }
+
+    .contentWrap {
+        width: 100%;
+        color: #026b97;
+        background-color: #fff;
+    }
+
+    .footer-contact-content .support .support-left {
+        background: url('../images/responsive/icon-responsive.png') no-repeat;
+        height: 22px;
+        width: 100%;
+    }
+
+        .footer-contact-content .support .support-left .callcenter {
+            padding: 0 0 15px 30px;
+            clear: both;
+            width: 100%;
+            float: left;
+            font-size: 16px;
+        }
+
+        .footer-contact-content .support .support-left .mailSupport {
+            background: url('../images/responsive/icon-responsive.png') no-repeat 0 -36px;
+            padding-left: 30px;
+            float: left;
+            font-size: 16px;
+        }
+
+    .footer-contact-content .support .support-right {
+        margin-top: 53px;
+        height: 23px;
+        font-size: 16px;
+        background: url('../images/responsive/icon-responsive.png') no-repeat 0 -71px;
+        width: 100%;
+        padding-left: 8px;
+    }
+
+    .responsive-mobile {
+        width: 405px;
+        margin: 0 auto;
+    }
+
+    .content-right .row:last-child {
+        padding-bottom: 0 !important;
+    }
+
+    :-ms-fullscreen, :root .captcha {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .captcha {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container.body-content {
+        width: 100% !important;
+    }
+
+    .responsive-mobile {
+        width: calc(100% - 30px);
+    }
+
+    .a-footer {
+        font-size: 12px;
+    }
+
+    .item-content {
+        width: 100%;
+    }
+
+    .page-content {
+        width: 100%;
+    }
+
+    .container-reg {
+        width: 100%;
+    }
+
+    .field-text-head {
+        font-size: 20px;
+    }
+
+    .footer-wrapper {
+        width: calc(100% - 30px);
+    }
+
+
+    .validation {
+        right: 3px;
+    }
+
+    .field-text {
+        font-size: 14px;
+    }
+
+    .field-text-italic {
+        font-size: 12px;
+    }
+
+    .code-vn-cls {
+        font-size: 14px;
+    }
+
+    .riTextBox {
+        font-size: 14px !important;
+    }
+
+    .misa-branch .branch-name {
+        font-size: 14px;
+    }
+
+    .branch-info ul li {
+        font-size: 14px;
+    }
+
+    .infoText {
+        left: 155px;
+    }
+
+    html body .RadInput input.riEmpty, html body .RadInput textarea.riEmpty, html body input.RadInput_Empty, .emptyMessage-cls, .emptyMessage-cls-confirmPassword {
+        font-size: 11px !important;
+    }
+
+    #pcopyright {
+        font-size: 12px;
+    }
+
+    .pnlMoreInfo, .plnResend {
+        width: 100%;
+    }
+
+    .field-text-head-active, .dvResend .field-text-head {
+        font-size: 18px;
+    }
+
+    .text-desc, .field-text-Resend {
+        font-size: 14px;
+    }
+
+    .dvResend .row {
+        width: 100%;
+    }
+
+    .btn-ResendActiveCode-cls {
+        background-color: #026b97;
+    }
+
+    .button-register-resendSMS {
+        padding: 0;
+        background: transparent;
+        font-size: 14px !important;
+    }
+
+    .loading-area {
+        padding: 0 !important;
+    }
+
+    .success-info-panel .field-text-head-active {
+        font-size: 18px;
+    }
+
+    #lblActiveStep2 {
+        font-size: 14px;
+    }
+
+    .success-info-panel .button-register-success {
+        font-size: 14px;
+    }
+}
+
+.clsValidateStep3 {
+    color: red;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.img-page-success {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.resend {
+    text-align: center;
+}
+
+.cls-phone-error {
+    font-size: 12px;
+    font-family: Roboto;
+    color: red;
+    padding-bottom: 15px;
+}
+
+/* Other */
+.box-country-select {
+    border-right: none;
+    cursor: pointer
+}
+.container-login {
+    height: 400px;
+    background-color: #fff;
+    margin: 25px 0;
+    width: 100%;
+    position: relative;
+}
+#formLogin {
+    padding:0 30px;
+}

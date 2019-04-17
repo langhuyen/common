@@ -1,0 +1,74 @@
+
+#header {
+    position: relative;
+}
+
+    #header .header-user-info {
+        /*border: 1px solid #ccc;*/
+        width: 200px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        bottom: 8px;
+        padding: 10px;
+    }
+
+        #header .header-user-info .user-info-box {
+            height: 28px;
+        }
+
+        #header .header-user-info .avatar-user {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #ccc;
+            background-image: url('../../Contents/Images/avatar.jpg');
+            background-size: 26px;
+            border-radius: 50%;
+            display: inline-block;
+            background-repeat: no-repeat;
+        }
+
+        #header .header-user-info .user-info {
+            position: absolute;
+            display: inline-block;
+            font-weight: 700;
+            line-height: 28px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+
+            #header .header-user-info .user-info:after {
+                display: inline-block;
+                width: 16px;
+                height: 8px;
+                content: "";
+                background-image: url('../../Contents/Images/arrow-down-line.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        #header .header-user-info .user-menu-box {
+            display:none;
+            position: absolute;
+            width: calc(100% - 16px);
+            top: 100%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            z-index: 999;
+            border:1px solid #ccc;
+            border-radius:2px;
+        }
+
+            #header .header-user-info .user-menu-box .user-menu-item {
+                border-bottom: 1px solid #ccc;
+                padding-left:4px;
+                height: 28px;
+                cursor: pointer;
+                font-weight: 700;
+                color: #797979;
+                line-height:28px;
+            }
+
+                #header .header-user-info .user-menu-box .user-menu-item:hover {
+                    color: #ff6a00;
+                }
